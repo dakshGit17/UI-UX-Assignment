@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daksh Raj - Portfolio</title>
+</head>
+<body>
+<h1>DAKSH RAJ</h1>
+<p><strong>Electronics & Computer Engineering Student | Full-Stack
+Developer | Tech Enthusiast</strong></p>
+<p><em>Patiala, Punjab | +91 7082269244</em></p>
+<h2 id="about">About Me</h2>
+<img src="DAKSH PHOTO.JPG" alt="Daksh Raj Profile Photo"
+width="250" height="300" title="Daksh Raj - Electronics & Computer
+Engineering
+Student">
+<p>I am a passionate <strong>Electronics & Computer
+Engineering</strong> student at <em>Thapar Institute of Engineering and
+Technology</em> with a CGPA of 8.81. Currently pursuing my B.Tech degree
+(2023-2027), I am dedicated to exploring the intersection of technology
+and innovation.</p>
+<p>Based in <strong>Patiala, Punjab</strong></strong>, I am
+enthusiastic about <em>full-stack development</em></em>, web technologies,
+and creating innovative solutions that make a difference. My academic
+journey has equipped me with a solid foundation in both theoretical
+concepts and practical applications.</p>
+<p>I believe in continuous learning and strive to stay updated with
+the latest technological advancements. My goal is to contribute
+meaningfully to the tech industry while building impactful projects that
+solve real-world problems.</p>
+<h2 id="education">Education</h2>
+<table border="1">
+<thead>
+<tr>
+<th>Institution</th>
+<th>Degree/Class</th>
+<th>Year</th>
+<th>CGPA/Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="1"><strong>Thapar Institute of Engineering
+and Technology</strong></td>
+<td>B.Tech - Electronics and Computer Engineering</td>
+<td>2023 - 2027</td>
+<td>8.81 CGPA</td>
+</tr>
+<tr>
+<td colspan="1"><strong>M.L.B International
+School</strong></td>
+<td>Class 12 (CBSE)</td>
+<td>2023</td>
+<td>80.2%</td>
+</tr>
+<tr>
+<td><strong>Delhi Public School</strong></td>
+<td>Class 10 (CBSE)</td>
+<td>2021</td>
+<td>94.2%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="skills">Technical Skills</h2>
+<h3>Programming Languages</h3>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>JavaScript</li>
+<li>ARM Assembly Language</li>
+</ul>
+<h3>Web Technologies</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Tailwind CSS</li>
+<li>React</li>
+<li>Node.js</li>
+</ul>
+<h3>Database Technologies</h3>
+<ul>
+<li>MongoDB</li>
+<li>SQL</li>
+<li>MySQL</li>
+</ul>
+<h3>Core CS Concepts</h3>
+<ul>
+<li>Data Structures and Algorithms</li>
+<li>Object-Oriented Programming</li>
+<li>Computer Networks</li>
+<li>Database Management Systems</li>
+</ul>
+<h2 id="projects">Projects</h2>
+<h3><strong>StayEase</strong> - Full-Stack Rental Web Application</h3>
+<p>StayEase is a <em>full-stack Airbnb-inspired platform</em> that
+enables users to register, log in, and list or browse rental properties.
+The backend is built with <strong>Node.js</strong> and
+<strong>Express</strong>, while <strong>MongoDB</strong> handles data
+persistence. Dynamic pages are rendered using <strong>EJS
+templates</strong>, and sessions are securely managed using
+<strong>cookies</strong>. The project is designed for both development and
+production environment configuration.</p>
+<h3><strong>Interactive Tic-Tac-Toe Game</strong></h3>
+<p>Built a responsive Tic-Tac-Toe game using <strong>HTML5</strong>,
+<strong>CSS</strong>, and <strong>JavaScript</strong>. Implementing
+win/draw logic through game-based pattern checks and move history
+tracking. Added features like <em>undo moves</em> and <em>real-time winner
+detection</em> while maintaining clean, performant code architecture.</p>
+<h2 id="achievements">Achievements & Leadership</h2>
+<ol>
+<li><strong>Discipline Head of Hostel</strong> - maintained
+discipline and coordinated with hostel authorities</li>
+<li><strong>Captained intra-hostel cricket team</strong> - winner
+of inter-hostel cricket tournament</li>
+<li><strong>Active participant in football and cricket</strong> at
+university level</li>
+</ol>
+<h2 id="contact">Contact Information</h2>
+<h3>Email</h3>
+<p><a href="mailto:dakshpr17@gmail.com">dakshpr17@gmail.com</a></p>
+<h3>Phone</h3>
+<p><strong>+91 7082269244</strong></p>
+<h3>LinkedIn</h3>
+<p><a href="https://linkedin.com/in/dakshRaj17"
+target="_blank">linkedin.com/in/dakshRaj17</a></p>
+<h3>GitHub</h3>
+<p><a href="https://github.com/dakshRGit17"
+target="_blank">github.com/dakshRGit17</a></p>
+<h3>LeetCode</h3>
+<p><a href="https://leetcode.com/daksh_codess"
+target="_blank">leetcode.com/daksh_codess</a></p>
+<footer>
+<p><em>"Made by Daksh Raj"</em></p>
+<html>

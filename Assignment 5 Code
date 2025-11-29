@@ -1,0 +1,147 @@
+// Predefined numbers
+let num1 = 12;
+let num2 = 4;
+// Calculations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+let quotient = num1 / num2;
+// Display the results
+console.log("Number 1:", num1);
+console.log("Number 2:", num2);
+console.log("Sum:", sum);
+console.log("Difference:", difference);
+console.log("Product:", product);
+console.log("Quotient:", quotient);
+// Create an array of 5 numbers
+let numbers = [23, 7, 45, 12, 89];
+console.log("Original Array:", numbers);
+// Find largest and smallest manually
+let largest = numbers[0];
+let smallest = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+ if (numbers[i] > largest) {
+ largest = numbers[i];
+ }
+ if (numbers[i] < smallest) {
+ smallest = numbers[i];
+ }
+}
+console.log("Largest Number:", largest);
+console.log("Smallest Number:", smallest);
+// Sort in ascending order using Selection Sort
+let ascending = [...numbers];
+for (let i = 0; i < ascending.length - 1; i++) {
+ let minIndex = i;
+ for (let j = i + 1; j < ascending.length; j++) {
+ if (ascending[j] < ascending[minIndex]) {
+ minIndex = j;
+ }
+ }
+ // Swap
+ let temp = ascending[i];
+ ascending[i] = ascending[minIndex];
+ ascending[minIndex] = temp;
+}
+console.log("Ascending Order:", ascending);
+// Sort in descending order using Selection Sort
+let descending = [...numbers];
+for (let i = 0; i < descending.length - 1; i++) {
+ let maxIndex = i;
+ for (let j = i + 1; j < descending.length; j++) {
+ if (descending[j] > descending[maxIndex]) {
+ maxIndex = j;
+ }
+ }
+ // Swap
+ let temp = descending[i];
+ descending[i] = descending[maxIndex];
+ descending[maxIndex] = temp;
+}
+console.log("Descending Order:", descending);
+iii. Create a simple form with fields for name, email, and age. Write JavaScript to
+validate that:
+The name field is not empty.
+The email is in the correct format.
+The age is between 18 and 100.
+HTML Code :
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Form Validation</title>
+</head>
+<body>
+ <h2>Simple Form</h2>
+ <form id="myForm" onsubmit="return validateForm()">
+ <label for="name">Name:</label>
+ <input type="text" id="name"><br><br>
+ <label for="email">Email:</label>
+ <input type="text" id="email"><br><br>
+ <label for="age">Age:</label>
+ <input type="text" id="age"><br><br>
+ <button type="submit">Submit</button>
+ </form>
+ <p id="error" style="color:red;"></p>
+ <!-- Linking external JavaScript file -->
+ <script src="script.js"></script>
+</body>
+</html>
+JavaScript Code :
+function validateForm() {
+ // Get values
+ let name = document.getElementById("name").value.trim();
+ let email = document.getElementById("email").value.trim();
+ let age = document.getElementById("age").value.trim();
+ let errorMsg = "";
+ // Validate name
+ if (name === "") {
+ errorMsg += "Name cannot be empty.<br>";
+ }
+ // Validate email (just check for '@')
+ if (!email.includes("@")) {
+ errorMsg += "Email must contain '@' symbol.<br>";
+ }
+ // Validate age (must be a number between 18 and 100)
+ let ageNum = parseInt(age);
+ if (isNaN(ageNum) || ageNum < 18 || ageNum > 100) {
+ errorMsg += "Age must be a number between 18 and 100.<br>";
+ }
+ // Display error messages if any
+ document.getElementById("error").innerHTML = errorMsg;
+ // If there are errors, prevent form submission
+ return errorMsg === "";
+}
+// Create a student object
+let student = {
+ name: "John Doe",
+ age: 20,
+ grades: 85
+};
+// Display original student information
+console.log("Original Student Info:", student);
+// Add a new property 'class'
+student.class = "12th Grade";
+console.log("After Adding Class:", student);
+// Update the student's grade
+student.grades = 90;
+console.log("After Updating Grade:", student);
+// Display all student's information
+console.log("Final Student Information:");
+for (let key in student) {
+ console.log(key + ": " + student[key]);
+}
+
+// Function to process the array
+function processArray(numbers) {
+ // 1. Remove all odd numbers
+ let evenNumbers = numbers.filter(num => num % 2 === 0);
+ // 2. Multiply remaining numbers by 2
+ let doubledNumbers = evenNumbers.map(num => num * 2);
+ // 3. Find the sum of resulting numbers
+ let sum = doubledNumbers.reduce((acc, num) => acc + num, 0);
+ return sum;
+}
+// Example usage
+let arr = [1, 2, 3, 4, 5, 6];
+let result = processArray(arr);
+console.log("Result:", result);

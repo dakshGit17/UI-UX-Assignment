@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>To-Do List</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>To-Do List</h1>
+ <div class="task-form">
+ <input type="text" id="taskTitle" placeholder="Enter task title">
+ <textarea id="taskDescription" placeholder="Enter task
+description"></textarea>
+ <button class="add-btn" onclick="addTask()">Add Task</button>
+ </div>
+ <div id="taskList"></div>
+ <script src="script.js"></script>
+</body>
+</html>
+CSS CODE :
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f5f5f5;
+ padding: 20px;
+}
+h1 {
+ text-align: center;
+}
+.task-form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 20px;
+}
+input, textarea {
+ width: 300px;
+ margin: 5px 0;
+ padding: 8px;
+}
+button {
+ padding: 8px 12px;
+ margin: 5px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.add-btn {
+ background-color: #007bff;
+ color: white;
+}
+.task {
+ background-color: white;
+ padding: 15px;
+ border-radius: 10px;
+ margin-bottom: 10px;
+ box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.completed {
+ text-decoration: line-through;
+ color: gray;
+}
+.task-buttons {
+ margin-top: 10px;
+}
+.task-buttons button {
+ background-color: #e0e0e0;
+}
+.task-buttons button:hover {
+ background-color: #d0d0d0;
+}
+JAVASCRIPT CODE :
+function addTask() {
+ const title = document.getElementById('taskTitle').value.trim();
+ const desc = document.getElementById('taskDescription').value.trim();
+ if (!title) {
+ alert('Please enter a task title!');
+ return;
+ }
+ const taskList = document.getElementById('taskList');
+ const taskDiv = document.createElement('div');
+ taskDiv.className = 'task';
+ const titleEl = document.createElement('h3');
+ titleEl.textContent = title;
+ const descEl = document.createElement('p');
+ descEl.textContent = desc;
+ const btnContainer = document.createElement('div');
+ btnContainer.className = 'task-buttons';
+ // Mark Complete Button
+ const completeBtn = document.createElement('button');
+ completeBtn.textContent = 'Mark as Completed';
+ completeBtn.onclick = function() {
+ const isCompleted = titleEl.classList.toggle('completed');
+ descEl.classList.toggle('completed');
+ completeBtn.textContent = isCompleted ? 'Mark as Incomplete' : 'Mark
+as Completed';
+ };
+ // Edit Button
+ const editBtn = document.createElement('button');
+ editBtn.textContent = 'Edit';
+ editBtn.onclick = function() {
+ if (editBtn.textContent === 'Edit') {
+ // Change to edit mode
+ const titleInput = document.createElement('input');
+ titleInput.type = 'text';
+ titleInput.value = titleEl.textContent;
+ const descInput = document.createElement('textarea');
+ descInput.value = descEl.textContent;
+ taskDiv.replaceChild(titleInput, titleEl);
+ taskDiv.replaceChild(descInput, descEl);
+ editBtn.textContent = 'Save';
+ } else {
+ // Save changes
+ const newTitle = taskDiv.querySelector('input').value;
+ const newDesc = taskDiv.querySelector('textarea').value;
+ titleEl.textContent = newTitle;
+ descEl.textContent = newDesc;
+ taskDiv.replaceChild(titleEl, taskDiv.querySelector('input'));
+ taskDiv.replaceChild(descEl, taskDiv.querySelector('textarea'));
+ editBtn.textContent = 'Edit';
+ }
+ };
+ // Delete Button
+ const deleteBtn = document.createElement('button');
+ deleteBtn.textContent = 'Delete';
+ deleteBtn.onclick = function() {
+ taskList.removeChild(taskDiv);
+ };
+ btnContainer.appendChild(completeBtn);
+ btnContainer.appendChild(editBtn);
+ btnContainer.appendChild(deleteBtn);
+ taskDiv.appendChild(titleEl);
+ taskDiv.appendChild(descEl);
+ taskDiv.appendChild(btnContainer);
+ taskList.appendChild(taskDiv);
+ // Clear input fields
+ document.getElementById('taskTitle').value = '';
+ document.getElementById('taskDescription').value = '';
+}

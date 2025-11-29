@@ -1,1 +1,240 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Thaparlympics - Homepage</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="Assignment4_style.css">
+</head>
+<body>
+ <header>
+ <h1>Thaparlympics 2025 <span class="badge">15–17 Sep</span></h1>
+ <p>Thapar Institute — Inter-Branch Sports Tournament</p>
+ <nav>
+ <a class="currentpage" href="Assignment4_Homepage.html">Homepage</a>
+ <a href="Assignment4_eventsandteams.html">Events</a>
+ <a href="Assignment4_schedule.html">Schedule</a>
+ <a href="Assignment4_registration.html">Register</a>
+ <a href="Assignment4_gallery.html">Gallery</a>
+ <a href="Assignment4_contact.html">Contact</a>
+ </nav>
+ </header>
+ <section>
+ <h2>Welcome to Thaparlympics</h2>
+ <div class="hero">
+ <div class="hero-card">
+ <img
+src="https://static.vecteezy.com/system/resources/thumbnails/036/170/671/small_2x/
+people-running-illustration-vector.jpg" alt="Sports illustration">
+ <p style="margin-top:12px;">
+ <b>Thaparlympics</b> celebrates competition, teamwork, and sportsmanship
+across campus.
+ Join us for three days of electrifying matches and memories!
+ </p>
+ </div>
+ <div class="hero-card">
+ <h3 style="margin-bottom:10px;color:#003366;">Highlights from Previous
+Events</h3>
+ <video controls preload="metadata"
+poster="https://royalpatiala.in/wp-content/uploads/2024/03/IMG_1521-scaled.webp">
+ <source src="E:\Semester 5\UI_UX\Assignments\Codes\Assignment4\Thapar
+64th Annual Athletic Meet.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+ </video>
+ <small>Tip: Tap the play button to watch a short highlight demo
+clip.</small>
+ </div>
+ </div>
+ </section>
+ <footer>&copy; 2025 Thaparlympics | Thapar Institute</footer>
+</body>
+</html>
+Events and Teams
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Events - Thaparlympics</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="Assignment4_style.css">
+</head>
+<body>
+ <header>
+ <h1>Events</h1>
+ <nav>
+ <a href="Assignment4_Homepage.html">Homepage</a>
+ <a class="currentpage" href="Assignment4_eventsandteams.html">Events</a>
+ <a href="Assignment4_schedule.html">Schedule</a>
+ <a href="Assignment4_registration.html">Register</a>
+ <a href="Assignment4_gallery.html">Gallery</a>
+ <a href="Assignment4_contact.html">Contact</a>
+ </nav>
+ </header>
+ <section>
+ <h2>Competitions</h2>
+ <ul>
+ <li>Football (11 a side)</li>
+ <li>Football (6 a side)</li>
+ <li>Basketball</li>
+ <li>Table Tennis (Singles &amp; Doubles)</li>
+ <li>Badminton (Singles &amp; Doubles)</li>
+ <li>Lawn Tennis (Singles &amp; Doubles)</li>
+ <li>Track &amp; Field Races</li>
+ <li>Cricket</li>
+ </ul>
+ </section>
+ <section>
+ <h2>Groups</h2>
+ <table>
+ <tr><th>Group 1</th><th>Group 2</th></tr>
+ <tr><td>Invincibles</td><td>Computer Steel Heads</td></tr>
+ <tr><td>Royal Falcons</td><td>Live Wires</td></tr>
+ <tr><td>Octane Boosters</td><td>Blazing Titans</td></tr>
+ </table>
+ </section>
+ <footer>&copy; 2025 Thaparlympics | Thapar Institute</footer>
+</body>
+</html>
+Schedule
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Schedule - Thaparlympics</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="Assignment4_style.css">
+</head>
+<body>
+ <header>
+ <h1>Event Schedule</h1>
+ <nav>
+ <a href="Assignment4_Homepage.html">Homepage</a>
+ <a href="Assignment4_eventsandteams.html">Events</a>
+ <a class="currentpage" href="Assignment4_schedule.html">Schedule</a>
+ <a href="Assignment4_registration.html">Register</a>
+ <a href="Assignment4_gallery.html">Gallery</a>
+ <a href="Assignment4_contact.html">Contact</a>
+ </nav>
+ </header>
+ <section>
+ <h2>Welcome Audio</h2>
+ <p>Press play to hear a short greeting and guidelines for participants.</p>
+ <audio controls preload="metadata">
+ <source src="Audio.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
+ </audio>
+ </section>
+ <section>
+ <h2>Detailed Schedule</h2>
+ <table>
+ <tr>
+ <th>Sport</th>
+ <th>Date</th>
+ <th>Time</th>
+ <th>Venue</th>
+ </tr>
+ <tr>
+ <td>Football (11 a side)</td>
+ <td>15 Sept</td>
+ <td>9:00 AM</td>
+ <td>Main Ground</td>
+ </tr>
+ <tr>
+ <td>Football (6 a side)</td>
+ <td>15 Sept</td>
+ <td>2:00 PM</td>
+ <td>Practice Ground</td>
+ </tr>
+ <tr>
+ <td>Basketball</td>
+ <td>16 Sept</td>
+ <td>10:00 AM</td>
+ <td>Basketball Court</td>
+ </tr>
+ <tr>
+ <td>Badminton</td>
+ <td>16 Sept</td>
+ <td>1:00 PM</td>
+ <td>Indoor Stadium</td>
+ </tr>
+ <tr>
+ <td>Table Tennis</td>
+ <td>16 Sept</td>
+ <td>3:00 PM</td>
+ <td>Sports Hall</td>
+ </tr>
+ <tr>
+ <td>Lawn Tennis</td>
+ <td>17 Sept</td>
+ <td>9:00 AM</td>
+ <td>Tennis Court</td>
+ </tr>
+ <tr>
+ <td>Track &amp; Field</td>
+ <td>17 Sept</td>
+ <td>11:00 AM</td>
+ <td>Athletics Ground</td>
+ </tr>
+ <tr>
+ <td>Cricket</td>
+ <td>17 Sept</td>
+ <td>2:00 PM</td>
+ <td>Main Ground</td>
+ </tr>
+ </table>
+ </section>
+ <footer>
+ &copy; 2025 Thaparlympics | Thapar Institute
+ </footer>
+</body>
+</html>
+Registration Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Register - Thaparlympics</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="Assignment4_style.css">
+</head>
+<body>
+ <header>
+ <h1>Register for Thaparlympics</h1>
+ <nav>
+ <a href="Assignment4_Homepage.html">Homepage</a>
+ <a href="Assignment4_eventsandteams.html">Events</a>
+ <a href="Assignment4_schedule.html">Schedule</a>
+ <a class="currentpage" href="Assignment4_registration.html">Register</a>
+ <a href="Assignment4_gallery.html">Gallery</a>
+ <a href="Assignment4_contact.html">Contact</a>
+ </nav>
+ </header>
+ <section>
+ <h2>Participant Registration Form</h2>
+ <form>
+ <label for="name">Full Name</label>
+ <input id="name" name="name" type="text" required placeholder="e.g., A.
+Sharma">
+ <label for="branch">Branch</label>
+ <input id="branch" name="branch" type="text" required placeholder="e.g.,
+ECE">
+ <p style="margin-top:6px;"><strong>Select Sports (multiple
+allowed):</strong></p>
+ <div role="group" aria-label="Sports selection">
+ <label><input type="checkbox" name="sports"
+value="Football">Football</label>
+ <label><input type="checkbox" name="sports"
+value="Basketball">Basketball</label>
+ <label><input type="checkbox" name="sports" value="Table Tennis">Table
+Tennis</label>
+ <label><input type="checkbox" name="sports"
+value="Badminton">Badminton</label>
+ <label><input type="checkbox" name="sports" value="Lawn Tennis">Lawn
+Tennis</label>
+ <label><input type="checkbox" name="sports" value="Track & Field">Track
+&amp; Field</label>
+ <label><input type="checkbox" name="sports"
+value="Cricket">Cricket</label>
+ </div>
+ <input type="submit" value="Submit Registration">
+ </form>
+ </section>
+ <footer>&copy; 2025 Thaparlympics | Thapar Institute</footer>
+</body>
+</html>
